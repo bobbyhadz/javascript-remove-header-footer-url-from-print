@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <style>
+      @media print {
+        @page {
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Home page</h2>
+
+    <h2>bobbyhadz.com</h2>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Ipsum cumque quis nobis, pariatur aut quisquam minima?
+      Fugiat odio cumque similique quis consequuntur inventore
+      aspernatur praesentium obcaecati eaque, dolorem veniam
+      possimus.
+    </p>
+
+    <button id="btn">Print</button>
+
+    <script>
+      const btn = document.getElementById('btn');
+
+      btn.addEventListener('click', () => {
+        window.print();
+      });
+    </script>
+  </body>
+</html>
